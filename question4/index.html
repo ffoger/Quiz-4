@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Question3 Client</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="mustache.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <script id="company-template" type="x-tmpl-mustache">
+      <div class='companies' data-id="{{id}}">
+        <a href='#'>{{name}}</a>
+      </div>
+    </script>
+
+    <script id="company-details-template" type="x-tmpl-mustache">
+      <div class='company-details'>
+        <h1>{{name}}</h1>
+        <h2>Products</h2>
+        <div id="products"></div>
+      </div>
+    </script>
+
+    <script id="product-template"  type="x-tmpl-mustache">
+      <div class="product">
+        <p>{{name}}</p>
+      </div>
+    </script>
+
+    <h1>Question 4</h1>
+    <div id="companies"></div>
+    <div id="company-details"></div>
+  </body>
+</html>
